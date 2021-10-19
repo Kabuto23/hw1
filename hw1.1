@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let Tc = +prompt('Температура по цельсию');
+        let Tf = (9 / 5) * Tc + 32;
+        alert(Tf);
+    </script>
+    <script>
+        let name = 'Василий';
+        let admin = name;
+        alert(admin);
+    </script>
+    <script>
+        let result = 10 + 10 + '10'; /*
+        переменная имеет тип number, потому что изначально в нее записывается число 10
+        к 10 прибавляем 10,
+        получается 20,
+        к 20 приписываем '10',
+        потому что '10' имеет тип string и не является числом,
+        тип переменной меняется на string
+        получаем 2010 */
+        console.log(result);
+    </script>
+    <script>
+        let result1 = 10 + '10' + 10; /*
+          переменная имеет тип number, потому что изначально в нее записывается число 10
+          к 10 приписываем '10'
+          получается 1010
+          тип переменной меняется на string
+          к '1010' прибавляем 10
+          получается 101010, потому что '1010' не является числом
+
+         */
+        console.log(result1);
+    </script>
+    <script>
+        let result2 = 10 + 10 + +'10'; /*
+          + перед '10' преобразует '10' в число 10
+          */
+        console.log(result2);
+    </script>
+    <script>
+        let result3 = 10 / -''; /* 10 делится на -NaN */
+        console.log(result3);
+    </script>
+    <script>
+        let result4 = 10 / +'2,5'; /* '2,5' не переводится в число,  */
+        console.log(result4);
+    </script>
+
+</body>
+</html>
